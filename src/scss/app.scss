@@ -1,0 +1,79 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+
+$font-family-base: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
+
+// The path for our ionicons font files
+$ionicons-font-path: "assets/fonts";
+
+$dark: #263238;
+$positive: #2196F3;
+
+// include all of Ionic
+@import "../../node_modules/ionic-sdk/scss/ionic";
+
+// include your custom component SCSS modules
+@import '../app/views/about/about.scss';
+@import '../app/views/demo/demo.scss';
+@import '../app/views/video/video.scss';
+
+.bar {
+  border-bottom-width: 0;
+
+  &.bar-gradient {
+    background: linear-gradient(to right, #1976D2, #90CAF9);
+  }
+  &.bar-gradient-dark {
+    background: linear-gradient(to right, #263238, #546E7A);
+  }
+}
+
+.col-90 {
+  margin: auto;
+}
+
+html {
+  touch-action: manipulation;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#list {
+  background: white;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 15px 0 0 0;
+  img {
+    width: 95% !important;
+    margin-left: 2.5%;
+    margin-top: 5px;
+    border-radius: 4px;
+    max-height: 145px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 1px;
+    color: #444;
+  }
+}

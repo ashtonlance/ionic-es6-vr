@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>VIP VR Player</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="assets/css/video-js.min.css" />
+    <link rel="stylesheet" href="assets/css/videojs-panorama.min.css" />
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+</head>
+
+<body ng-app="ionicSeed" ng-cloak>
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-side-menus>
+        <ion-side-menu side="left">
+            <ion-header-bar align-title="left" class="bar-dark bar-gradient-dark">
+                <h1 class="title">Welcome</h1>
+            </ion-header-bar>
+            <ion-content>
+                <ion-list>
+                    <ion-item class="item-icon-left" ui-sref="home" menu-close>
+                        <i class="icon ion-ios-home-outline"></i> Home
+                    </ion-item><ion-item class="item-icon-left" ui-sref="stream" menu-close>
+                        <i class="icon ion-ios-cloud-outline"></i> Streaming Videos
+                    </ion-item>
+                    <ion-item class="item-icon-left" ui-sref="about" menu-close>
+                        <i class="icon ion-ios-help-outline"></i> About
+                    </ion-item>
+                    <ion-item class="item-icon-left" ui-sref="demo" menu-close>
+                        <i class="icon ion-ios-gear-outline"></i> Demo Video
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-side-menu>
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-positive bar-gradient">
+                <ion-nav-buttons side="left">
+                    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+                </ion-nav-buttons>
+                <ion-nav-back-button></ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+    </ion-side-menus>
+</body>
+
+</html>

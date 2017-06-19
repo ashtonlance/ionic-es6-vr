@@ -1,0 +1,14 @@
+<ion-view view-title="Streaming Videos">
+    <ion-content padding="true" id="list">
+        <div class="row" style="flex-wrap: wrap">
+            <div ng-repeat="video in stream.videos" class="col col-90">
+                <div class="card">
+                    <a ng-click="stream.openVideo(video.source)">
+                        <img ng-src="{{video.thumbnail}}">
+                        <p>{{video.label}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
