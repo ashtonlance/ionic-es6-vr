@@ -4,6 +4,7 @@
             <div ng-repeat="video in app.videos" class="col col-90">
                 <div class="card">
                     <a ng-click="app.openVideo(video.source)">
+                        <i class="icon ion-play"></i>
                         <img ng-src="{{video.thumbnail}}">
                         <p>{{video.label}}</p>
                     </a>

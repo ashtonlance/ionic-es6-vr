@@ -1,5 +1,6 @@
-<ion-view view-title="Video">
+<ion-view view-title="Video" hide-nav-bar="true">
     <ion-content scroll="false" id="video">
+        <i id="back" class="icon ion-ios-arrow-back" ng-click="video.goBack()"></i>
         <video preload id="videojs-panorama-player" class="video-js vjs-sublime-skin" crossorigin="anonymous" controls
             loop>
         </video>

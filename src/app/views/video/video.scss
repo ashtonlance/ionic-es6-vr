@@ -320,13 +320,21 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   height: 4rem;
 }
 .video-js .vjs-time-control {
-  // line-height: 4rem;
-  // right: 30px;
   display: none;
 }
 .vjs-VR-control {
   right: 20px;
 }
 
+#back {
+    position: relative;
+    z-index: 10;
+    top: 75px;
+    left: 25px;
+    color: white;
+    font-size: 50px;
+}
+
+background: linear-gradient(to bottom, #2B2E35, #2D3540);
 
 }

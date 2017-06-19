@@ -36,19 +36,16 @@ $positive: #2196F3;
   border-bottom-width: 0;
 
   &.bar-gradient {
-    background: linear-gradient(to right, #1976D2, #90CAF9);
+    // background: linear-gradient(to right, #2B2E35, #2A3F52);
+    background: #457B9F;
   }
   &.bar-gradient-dark {
-    background: linear-gradient(to right, #263238, #546E7A);
+    background: linear-gradient(to right, #2B2E35, #2D3540);
   }
 }
 
 .col-90 {
   margin: auto;
-}
-
-html {
-  touch-action: manipulation;
 }
 
 body {
@@ -57,23 +54,35 @@ body {
 }
 
 #list {
-  background: white;
+  background: linear-gradient(to bottom, #2B2E35, #2D3540);
+  p {
+    color: #eee;
+    text-align: center;
+    margin-bottom: 4px;
+    letter-spacing: 1.55px;
+  }
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to top, #2B2E35, #2D3540);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  margin: 15px 0 0 0;
+  margin: 5px 0 0 0;
   img {
     width: 95% !important;
     margin-left: 2.5%;
-    margin-top: 5px;
+    margin-top: -10px;
     border-radius: 4px;
     max-height: 145px;
+    filter: brightness(75%);
   }
-  p {
-    text-align: center;
-    margin-bottom: 1px;
-    color: #444;
+  .ion-play {
+    color: #eee;
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+    top: 75px;
+    left: calc(50% - 5px);
+
   }
 }
